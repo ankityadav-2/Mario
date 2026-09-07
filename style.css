@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+    flex-direction: column;
+    overflow: hidden;
+    /* position: relative; */
+    background-color: black;
+
+}
+
+
+.game-container{
+    background-color: skyblue;
+    width: 80%;
+    height: 90vh;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.obstacle {
+    width: 100px;
+    overflow: hidden;
+    /* background-color: red; */
+
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+}
+
+.obstacle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mario {
+    width: 100px;
+    overflow: hidden;
+
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.mario img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mario.flipped img{
+    transform: scaleX(-1);
+}
+
+.platform{
+    width: 80%;
+    height: 10vh;
+    
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.platform img{
+    width: 110px;
+    height: 100%;
+
+    object-fit: cover;
+    
+}
+
+
+.score {
+    position: absolute;
+    top : 20%;
+    left : 20%;
+}
